@@ -297,3 +297,20 @@ res_final$final_predict <- apply(res_final[,3:4], 1, which.max)
 res_final$final_predict <- ifelse(res_final$final_predict==1, "win", "lost")
 
 write.table(res_final, "./results/res_final.csv", row.names = F, sep=";")
+
+#***********
+## Ranking 
+#***********
+## De acuerdo a la calidad de los jugadores, se toma el Rating de cada equipo como indicador para
+## determinar las posiciones dentro del mundial, para aquellas posiciones no definidas directamente dentro
+## del modelo
+teams32 <- c("Argentina", "Australia", "Belgium", "Brazil", "Colombia", "Costa Rica", "Croatia", "Denmark", "Egypt", 
+             "England", "France", "Germany", "Iceland", "Iran", "Japan", "Korea Republic", "Mexico", "Morocco", "Nigeria", 
+             "Panama", "Peru", "Poland", "Portugal", "Russia", "Saudi Arabia", "Senegal", "Serbia", "Spain", "Sweden", 
+             "Switzerland", "Tunisia", "Uruguay")
+
+rating <- fifa_teams %>% filter(Country %in% teams32) %>%
+          arrange(desc(Rating)) 
+
+write.table(rating, "./data/rating.csv", sep=";", row.names = F)
+
