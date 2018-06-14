@@ -178,9 +178,9 @@ pred_tied <- NULL
 pred_lost<- NULL
 
 for(i in iteraciones){
-     pred_win[[i]] <- predict(net_win[[i]], pc_fase_grupos[, 1:componentes])
-     pred_tied[[i]] <- predict(net_tied[[i]], pc_fase_grupos[, 1:componentes])
-     pred_lost[[i]] <- predict(net_lost[[i]], pc_fase_grupos[, 1:componentes])
+     pred_win[[i]] <- predict(net_win[[i]], pc_octavos[, 1:componentes])
+     pred_tied[[i]] <- predict(net_tied[[i]], pc_octavos[, 1:componentes])
+     pred_lost[[i]] <- predict(net_lost[[i]], pc_octavos[, 1:componentes])
 }
 
 ## Se define a continuación el resultado como el promedio de los resultados individuales de cada iteración
@@ -189,10 +189,111 @@ res_tied <- rowMeans(data.frame(pred_tied[[1]], pred_tied[[2]], pred_tied[[3]], 
 res_lost <- rowMeans(data.frame(pred_lost[[1]], pred_lost[[2]], pred_lost[[3]], pred_lost[[4]], pred_lost[[5]]))
 
 ## La tabla a continuación define el resultado final como la máxima probabilidad enconttrada
-res_fase_grupos <- cbind(encuentros, data.frame(res_win, res_tied, res_lost))
-res_fase_grupos$final_predict <- apply(res_fase_grupos[,3:5], 1, which.max)
-res_fase_grupos$final_predict <- ifelse(res_fase_grupos$final_predict==1, "win",
-                                        ifelse(res_fase_grupos$final_predict==2, "tied", "lost"))
+res_octavos <- cbind(encuentros, data.frame(res_win, res_tied, res_lost))
+res_octavos$final_predict <- apply(res_octavos[,3:5], 1, which.max)
+res_octavos$final_predict <- ifelse(res_octavos$final_predict==1, "win",
+                                        ifelse(res_octavos$final_predict==2, "tied", "lost"))
 
-write.table(res_fase_grupos, "./results/res_fase_grupos.csv", row.names = F, sep=";")
+write.table(res_octavos, "./results/res_octavos.csv", row.names = F, sep=";")
 
+#************************
+## Cuartos de final
+#************************
+cuartos <- read.table("./data/Matches_quarters.csv", sep=";", header = T)[,-1]
+cuartos <- merge(cuartos, fifa_teams, by.x = "Equipo_A", by.y = "Country", all.x = T, all.y = F)
+cuartos <- merge(cuartos, fifa_teams, by.x = "Equipo_B", by.y = "Country", all.x = T, all.y = F)
+
+encuentros <- cuartos[,c(2,1)]
+cuartos <- cuartos[,-(1:2)]
+
+cuartos <- cuartos - matrix(centro, nrow(cuartos), ncol(cuartos), byrow=TRUE)
+pc_cuartos <- predict(pc, cuartos)
+
+pred_win <- NULL
+pred_tied <- NULL
+pred_lost<- NULL
+
+for(i in iteraciones){
+     pred_win[[i]] <- predict(net_win[[i]], pc_cuartos[, 1:componentes])
+     pred_tied[[i]] <- predict(net_tied[[i]], pc_cuartos[, 1:componentes])
+     pred_lost[[i]] <- predict(net_lost[[i]], pc_cuartos[, 1:componentes])
+}
+
+## Se define a continuación el resultado como el promedio de los resultados individuales de cada iteración
+res_win <- rowMeans(data.frame(pred_win[[1]], pred_win[[2]], pred_win[[3]], pred_win[[4]], pred_win[[5]]))
+res_tied <- rowMeans(data.frame(pred_tied[[1]], pred_tied[[2]], pred_tied[[3]], pred_tied[[4]], pred_tied[[5]]))
+res_lost <- rowMeans(data.frame(pred_lost[[1]], pred_lost[[2]], pred_lost[[3]], pred_lost[[4]], pred_lost[[5]]))
+
+## La tabla a continuación define el resultado final como la máxima probabilidad enconttrada
+res_cuartos <- cbind(encuentros, data.frame(res_win, res_tied, res_lost))
+res_cuartos$final_predict <- apply(res_cuartos[,3:5], 1, which.max)
+res_cuartos$final_predict <- ifelse(res_cuartos$final_predict==1, "win",
+                                    ifelse(res_cuartos$final_predict==2, "tied", "lost"))
+
+write.table(res_cuartos, "./results/res_cuartos.csv", row.names = F, sep=";")
+
+
+#************************
+## Semifinal
+#************************
+semis <- read.table("./data/Matches_semis.csv", sep=";", header = T)[,-1]
+semis <- merge(semis, fifa_teams, by.x = "Equipo_A", by.y = "Country", all.x = T, all.y = F)
+semis <- merge(semis, fifa_teams, by.x = "Equipo_B", by.y = "Country", all.x = T, all.y = F)
+
+encuentros <- semis[,c(2,1)]
+semis <- semis[,-(1:2)]
+
+semis <- semis - matrix(centro, nrow(semis), ncol(semis), byrow=TRUE)
+pc_semis <- predict(pc, semis)
+
+pred_win <- NULL
+pred_lost<- NULL
+
+for(i in iteraciones){
+     pred_win[[i]] <- predict(net_win[[i]], pc_semis[, 1:componentes])
+     pred_lost[[i]] <- predict(net_lost[[i]], pc_semis[, 1:componentes])
+}
+
+## Se define a continuación el resultado como el promedio de los resultados individuales de cada iteración
+res_win <- rowMeans(data.frame(pred_win[[1]], pred_win[[2]], pred_win[[3]], pred_win[[4]], pred_win[[5]]))
+res_lost <- rowMeans(data.frame(pred_lost[[1]], pred_lost[[2]], pred_lost[[3]], pred_lost[[4]], pred_lost[[5]]))
+
+## La tabla a continuación define el resultado final como la máxima probabilidad enconttrada
+res_semis <- cbind(encuentros, data.frame(res_win, res_lost))
+res_semis$final_predict <- apply(res_semis[,3:4], 1, which.max)
+res_semis$final_predict <- ifelse(res_semis$final_predict==1, "win", "lost")
+
+write.table(res_semis, "./results/res_semis.csv", row.names = F, sep=";")
+
+
+#************************
+## Final
+#************************
+final <- read.table("./data/Matches_final.csv", sep=";", header = T)[,-1]
+final <- merge(final, fifa_teams, by.x = "Equipo_A", by.y = "Country", all.x = T, all.y = F)
+final <- merge(final, fifa_teams, by.x = "Equipo_B", by.y = "Country", all.x = T, all.y = F)
+
+encuentros <- final[,c(2,1)]
+final <- final[,-(1:2)]
+
+final <- final - matrix(centro, nrow(final), ncol(final), byrow=TRUE)
+pc_final <- predict(pc, final)
+
+pred_win <- NULL
+pred_lost<- NULL
+
+for(i in iteraciones){
+     pred_win[[i]] <- predict(net_win[[i]], pc_final[, 1:componentes])
+     pred_lost[[i]] <- predict(net_lost[[i]], pc_final[, 1:componentes])
+}
+
+## Se define a continuación el resultado como el promedio de los resultados individuales de cada iteración
+res_win <- rowMeans(data.frame(pred_win[[1]], pred_win[[2]], pred_win[[3]], pred_win[[4]], pred_win[[5]]))
+res_lost <- rowMeans(data.frame(pred_lost[[1]], pred_lost[[2]], pred_lost[[3]], pred_lost[[4]], pred_lost[[5]]))
+
+## La tabla a continuación define el resultado final como la máxima probabilidad enconttrada
+res_final <- cbind(encuentros, data.frame(res_win, res_lost))
+res_final$final_predict <- apply(res_final[,3:4], 1, which.max)
+res_final$final_predict <- ifelse(res_final$final_predict==1, "win", "lost")
+
+write.table(res_final, "./results/res_final.csv", row.names = F, sep=";")
