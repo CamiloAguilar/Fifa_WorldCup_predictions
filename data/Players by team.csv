@@ -378,7 +378,7 @@ Brazil,Marquinhos,Defensa,PSG,9,6,3
 Brazil,Fagner,Defensa,Corinthians,,12,2
 Brazil,Danilo,Defensa,Manchester City,3,4,
 Brazil,Geromel,Defensa,Gremio,,5,1
-Brazil,Filipe Luis,Defensa,Atlético de Madrid,6,9,2
+Brazil,Filipe Luís,Defensa,Atlético de Madrid,6,9,2
 Brazil,Paulinho,Centrocampista,Barcelona,17,1,
 Brazil,Fernandinho,Centrocampista,Manchester City,8,11,6
 Brazil,Fred,Centrocampista,Shakhtar Donetsk,,5,2
@@ -414,29 +414,29 @@ Switzerland,Breel Embolo,Delantero,Schalke,6,4,4
 Switzerland,Mario Gavranovic,Delantero,Dinamo Zagreb,2,7,2
 Switzerland,Haris Seferovic,Delantero,Benfica,14,3,2
 Switzerland,Xherdan Shaqiri,Delantero,Stoke City,12,,
-Costa Rica,Keylor Navas,Arquero,Real Madrid,12,,
-Costa Rica,Patrick Pemberton,Arquero,Alajuelense,,12,
-Costa Rica,Leonel Moreira,Arquero,Herediano,,12,2
-Costa Rica,Cristian Gamboa,Defensa,Celtic,13,1,
-Costa Rica,Ian Smith,Defensa,Norrköping,,4,4
-Costa Rica,Ronald Matarrita,Defensa,New York City,1,8,4
-Costa Rica,Bryan Oviedo,Defensa,Sunderland,12,2,1
-Costa Rica,Óscar Duarte,Defensa,RCD Espanyol,6,1,
-Costa Rica,Giancarlo González,Defensa,Bolonia,7,3,
-Costa Rica,Francisco Calvo,Defensa,Minnesota United,7,4,3
-Costa Rica,Kendall Waston,Defensa,Vancouver Whitecaps,10,3,2
-Costa Rica,Johnny Acosta,Defensa,Águilas,10,1,
-Costa Rica,David Guzmán,Centrocampista,Portland Timbers,8,5,4
-Costa Rica,Yeltsin Tejeda,Centrocampista,Lausanne,2,11,4
-Costa Rica,Celso Borges,Centrocampista,Deportivo La Coruña,14,,
-Costa Rica,Randall Azofeifa,Centrocampista,Herediano,3,11,4
-Costa Rica,Christian Bolaños,Centrocampista,Deportivo Saprissa,8,2,2
-Costa Rica,Rooney Wallace,Centrocampista,New York City,,12,4
-Costa Rica,Daniel Colindres,Centrocampista,Deportivo Saprissa,3,9,3
-Costa Rica,Bryan Ruiz,Centrocampista,Sporting,10,4,
+Costa Rica,Keylor Navas,Arquero,Real Madrid,13,,
+Costa Rica,Patrick Pemberton,Arquero,Alajuelense,,14,
+Costa Rica,Leonel Moreira,Arquero,Herediano,1,13,2
+Costa Rica,Cristian Gamboa,Defensa,Celtic,16,1,
+Costa Rica,Ian Smith,Defensa,Norrköping,,6,5
+Costa Rica,Ronald Matarrita,Defensa,New York City,2,9,5
+Costa Rica,Bryan Oviedo,Defensa,Sunderland,14,3,2
+Costa Rica,Óscar Duarte,Defensa,RCD Espanyol,9,1,
+Costa Rica,Giancarlo González,Defensa,Bolonia,9,4,1
+Costa Rica,Francisco Calvo,Defensa,Minnesota United,8,6,5
+Costa Rica,Kendall Waston,Defensa,Vancouver Whitecaps,11,5,3
+Costa Rica,Johnny Acosta,Defensa,Águilas,11,1,
+Costa Rica,David Guzmán,Centrocampista,Portland Timbers,9,5,4
+Costa Rica,Yeltsin Tejeda,Centrocampista,Lausanne,3,13,5
+Costa Rica,Celso Borges,Centrocampista,Deportivo La Coruña,17,,
+Costa Rica,Randall Azofeifa,Centrocampista,Herediano,3,12,4
+Costa Rica,Christian Bolaños,Centrocampista,Deportivo Saprissa,9,3,3
+Costa Rica,Rooney Wallace,Centrocampista,New York City,1,15,6
+Costa Rica,Daniel Colindres,Centrocampista,Deportivo Saprissa,5,10,3
+Costa Rica,Bryan Ruiz,Centrocampista,Sporting,11,4,
 Costa Rica,Joel Campbell,Delantero,Real Betis,6,2,2
-Costa Rica,Johan Venegas,Delantero,Deportivo Saprissa,5,6,5
-Costa Rica,Marco Ureña,Delantero,Los Ángeles FC,11,3,
+Costa Rica,Johan Venegas,Delantero,Deportivo Saprissa,7,6,5
+Costa Rica,Marco Ureña,Delantero,Los Ángeles FC,13,4,1
 Serbia,Vladimir Stojkovic,Arquero,Partizan,,,
 Serbia,Predrag Rajkovic,Arquero,Maccabi Tel Aviv,,,
 Serbia,Marko Dmitrović,Arquero,Eibar,,,
@@ -460,53 +460,53 @@ Serbia,Nemanja Radonjic,Centrocampista,Estrella Roja,,,
 Serbia,    Aleksandar Mitrović,Delantero,Fulham,,,
 Serbia,Aleksandar Prijović	,Delantero,PAOK,,,
 Serbia,Luka Jović,Delantero,Eintracht Frankfurt,,,
-Germany,Marc-André Ter Stegen,Arquero,Barcelona,,,
-Germany,Kevin Trapp,Arquero,PSG,,,
-Germany,Manuel Neuer,Arquero,Bayern,,,
-Germany,Jerôme Boateng,Defensa,Bayern,,,
-Germany,Matthias Ginter,Defensa,Mönchengladbach,,,
-Germany,Mats Hummels,Defensa,Bayern,,,
-Germany,Joshua Kimmich,Defensa,Bayern,,,
-Germany,Antonio Rüdiger,Defensa,Chelsea,,,
-Germany,Jonas Hector,Defensa,Colonia,,,
-Germany,Niklas Süle,Defensa,Bayern,,,
-Germany,Marvin Plattenhardt,Defensa,Hertha,,,
-Germany,Leon Goretzka,Centrocampista,Schalke,,,
-Germany,Toni Kroos,Centrocampista,Real Madrid,,,
-Germany,Sami Khedira,Centrocampista,Juventus,,,
-Germany,Mesut Özil,Centrocampista,Arsenal,,,
-Germany,Ilkay Gündogan,Centrocampista,Manchester City,,,
-Germany,Julian Draxler,Centrocampista,PSG,,,
-Germany,Sebastian Rudy,Centrocampista,Bayern,,,
-Germany,Julian Brandt,Delantero,Bayer Leverkusen,,,
-Germany,Timo Werner,Delantero,RB Leipzig,,,
-Germany,Thomas Müller,Delantero,Bayern,,,
-Germany,Mario Gómez,Delantero,Stuttgart,,,
-Germany,Marco Reus,Delantero,Dortmund,,,
-Mexico,Jesús Corona,Arquero,Cruz Azul,,,
-Mexico,Alfredo Talavera,Arquero,Toluca,,,
-Mexico,Guillermo Ochoa,Arquero,Standard Lieja,,,
-Mexico,Edson Álvarez,Defensa,Club América,,,
-Mexico,Hugo Ayala,Defensa,Tigres,,,
-Mexico,Jesús Gallardo,Defensa,Pumas UNAM,,,
-Mexico,Miguel Layún,Defensa,Sevilla,,,
-Mexico,Héctor Moreno,Defensa,Real Sociedad,,,
-Mexico,Diego Reyes,Defensa,Oporto,,,
-Mexico,Carlos Salcedo,Defensa,Eintracht Frankfurt,,,
-Mexico,Rafael Márquez,Defensa,Atlas,,,
-Mexico,Jesús Corona,Centrocampista,Oporto,,,
-Mexico,Marco Fabián,Centrocampista,Eintracht Frankfurt,,,
-Mexico,Giovani dos Santos,Centrocampista,LA Galaxy,,,
-Mexico,Jonathan dos Santos,Centrocampista,LA Galaxy,,,
-Mexico,Andrés Guardado,Centrocampista,Real Betis,,,
-Mexico,Erick Gutiérrez,Centrocampista,Pachuca,,,
-Mexico,Héctor Herrera,Centrocampista,Oporto,,,
-Mexico,Javier Aquino,Centrocampista,Tigres UANL,,,
-Mexico,Raúl Jiménez,Delantero,Benfica,,,
-Mexico,Javier Hernández,Delantero,West Ham,,,
-Mexico,Hirving Lozano,Delantero,PSV ,,,
-Mexico,Oribe Peralta,Delantero,Club América,,,
-Mexico,Carlos Vela,Delantero,Los Ángeles,,,
+Germany,Marc-André Ter Stegen,Arquero,Barcelona,7,9,1
+Germany,Kevin Trapp,Arquero,PSG,2,10,
+Germany,Manuel Neuer,Arquero,Bayern,5,,
+Germany,Jerôme Boateng,Defensa,Bayern,6,2,
+Germany,Matthias Ginter,Defensa,Mönchengladbach,2,9,2
+Germany,Mats Hummels,Defensa,Bayern,13,2,
+Germany,Joshua Kimmich,Defensa,Bayern,16,1,
+Germany,Antonio Rüdiger,Defensa,Chelsea,5,8,3
+Germany,Jonas Hector,Defensa,Colonia,11,1,
+Germany,Niklas Süle,Defensa,Bayern,3,8,2
+Germany,Marvin Plattenhardt,Defensa,Hertha,3,6,1
+Germany,Leon Goretzka,Centrocampista,Schalke,4,5,4
+Germany,Toni Kroos,Centrocampista,Real Madrid,12,,
+Germany,Sami Khedira,Centrocampista,Juventus,6,3,1
+Germany,Mesut Özil,Centrocampista,Arsenal,9,2,1
+Germany,Ilkay Gündogan,Centrocampista,Manchester City,5,4,4
+Germany,Julian Draxler,Centrocampista,PSG,12,2,2
+Germany,Sebastian Rudy,Centrocampista,Bayern,2,10,3
+Germany,Julian Brandt,Delantero,Bayer Leverkusen,4,12,5
+Germany,Timo Werner,Delantero,RB Leipzig,6,3,3
+Germany,Thomas Müller,Delantero,Bayern,12,,
+Germany,Mario Gómez,Delantero,Stuttgart,3,5,4
+Germany,Marco Reus,Delantero,Dortmund,1,1,1
+Mexico,Jesús Corona,Arquero,Cruz Azul,5,7,1
+Mexico,Alfredo Talavera,Arquero,Toluca,,4,
+Mexico,Guillermo Ochoa,Arquero,Standard Lieja,7,4,
+Mexico,Edson Álvarez,Defensa,Club América,3,8,4
+Mexico,Hugo Ayala,Defensa,Tigres,7,4,
+Mexico,Jesús Gallardo,Defensa,Pumas UNAM,7,2,
+Mexico,Miguel Layún,Defensa,Sevilla,5,2,2
+Mexico,Héctor Moreno,Defensa,Real Sociedad,6,,
+Mexico,Diego Reyes,Defensa,Oporto,6,2,1
+Mexico,Carlos Salcedo,Defensa,Eintracht Frankfurt,6,3,2
+Mexico,Rafael Márquez,Defensa,Atlas,,2,2
+Mexico,Jesús Corona,Centrocampista,Oporto,4,4,2
+Mexico,Marco Fabián,Centrocampista,Eintracht Frankfurt,1,4,3
+Mexico,Giovani dos Santos,Centrocampista,LA Galaxy,5,4,2
+Mexico,Jonathan dos Santos,Centrocampista,LA Galaxy,4,6,4
+Mexico,Andrés Guardado,Centrocampista,Real Betis,2,,
+Mexico,Erick Gutiérrez,Centrocampista,Pachuca,1,4,
+Mexico,Héctor Herrera,Centrocampista,Oporto,7,,
+Mexico,Javier Aquino,Centrocampista,Tigres UANL,3,7,4
+Mexico,Raúl Jiménez,Delantero,Benfica,5,6,1
+Mexico,Javier Hernández,Delantero,West Ham,1,3,2
+Mexico,Hirving Lozano,Delantero,PSV ,4,5,4
+Mexico,Oribe Peralta,Delantero,Club América,2,7,5
+Mexico,Carlos Vela,Delantero,Los Ángeles,7,6,4
 Sweden,Robin Olsen,Arquero,Copenhague,,,
 Sweden,Karl-Johan Johnsson,Arquero,Guingamp,,,
 Sweden,Kristoffer Nordfeldt,Arquero,Swansea,,,
@@ -711,7 +711,7 @@ Colombia,James Rodríguez,Centrocampista,Bayern,,,
 Colombia,Mateus Uribe,Centrocampista,Club América,,,
 Colombia,Carlos Bacca,Delantero,Villarreal,,,
 Colombia,Miguel Borja,Delantero,Palmeiras,,,
-Colombia,Radamel Falcaó,Delantero,Mónaco,,,
+Colombia,Radamel Falcao,Delantero,Mónaco,,,
 Colombia,José Heriberto Izquierdo,Delantero,Brighton,,,
 Colombia,Luis Fernando Muriel,Delantero,Sevilla,,,
 Japan,Eiji Kawashima,Arquero,FC Metz,,,

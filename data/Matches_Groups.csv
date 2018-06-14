@@ -1,0 +1,49 @@
+Grupo;Equipo_A;Equipo_B
+A;Russia;Saudi Arabia
+A;Russia;Egypt
+A;Russia;Uruguay
+A;Saudi Arabia;Egypt
+A;Saudi Arabia;Uruguay
+A;Uruguay;Egypt
+b;Portugal;Spain
+b;Portugal;Morocco
+b;Portugal;Iran
+b;Spain;Morocco
+b;Spain;Iran
+b;Iran;Morocco
+C;France;Australia
+C;France;Peru
+C;France;Denmark
+C;Australia;Peru
+C;Australia;Denmark
+C;Denmark;Peru
+D;Argentina;Iceland
+D;Argentina;Croatia
+D;Argentina;Nigeria
+D;Iceland;Croatia
+D;Iceland;Nigeria
+D;Nigeria;Croatia
+E;Brazil;Switzerland
+E;Brazil;Costa Rica
+E;Brazil;Serbia
+E;Switzerland;Costa Rica
+E;Switzerland;Serbia
+E;Serbia;Costa Rica
+F;Germany;Mexico
+F;Germany;Sweden
+F;Germany;Korea Republic
+F;Mexico;Sweden
+F;Mexico;Korea Republic
+F;Korea Republic;Sweden
+G;Belgium;Panama
+G;Belgium;Tunisia
+G;Belgium;England
+G;Panama;Tunisia
+G;Panama;England
+G;England;Tunisia
+H;Poland;Colombia
+H;Poland;Japan
+H;Poland;Senegal
+H;Colombia;Japan
+H;Colombia;Senegal
+H;Japan;Senegal
